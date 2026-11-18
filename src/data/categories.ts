@@ -7,6 +7,7 @@ export const categories: MenuCategory[] = [
   { id: 'salads', name: 'Salads', description: 'Fresh and vibrant choices', group: 'Food' },
   { id: 'meat', name: 'Meat Corner', description: 'Explore our meat selections', group: 'Food' },
   { id: 'chicken', name: 'Chicken Corner', description: 'Discover our chicken dishes', group: 'Food' },
+  { id: 'curries', name: 'Curries', description: 'Our chicken and vegetable curry selections', group: 'Food' },
   { id: 'fish', name: 'Fish & Seafood', description: 'From the waters to your table', group: 'Food' },
   { id: 'local', name: 'Local Dishes', description: 'Familiar and satisfying flavours', group: 'Food',
     note: 'Available accompaniments: Matooke, Rice, Pumpkin, Yam, Posho, Sweet Potato, Avocado, Greens and Bitter Berries.' },

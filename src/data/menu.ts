@@ -697,7 +697,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'roasted-chicken-sandwich',
     name: 'Roasted Chicken Sandwich',
-    categoryId: 'burgers',
+    categoryId: 'sandwiches',
     sourceSection: 'Sandwiches',
     description: 'All sandwiches are served with chips or a garden salad of your choice and Romesco sauce.',
     descriptionStatus: 'verified',
@@ -708,7 +708,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'club-sandwich',
     name: 'Club Sandwich',
-    categoryId: 'burgers',
+    categoryId: 'sandwiches',
     sourceSection: 'Sandwiches',
     description: 'Bacon, cheese, chicken, tomatoes and avocado with Romesco sauce and lettuce.',
     descriptionStatus: 'verified',
@@ -719,7 +719,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'philadelphia-sandwich',
     name: 'Philadelphia Sandwich',
-    categoryId: 'burgers',
+    categoryId: 'sandwiches',
     sourceSection: 'Sandwiches',
     description: 'Grilled beef with bell peppers, sweet corn infused with mozzarella cheese on baguette bread.',
     descriptionStatus: 'verified',
@@ -730,7 +730,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'vegetable-sandwich',
     name: 'Vegetable Sandwich',
-    categoryId: 'burgers',
+    categoryId: 'sandwiches',
     sourceSection: 'Sandwiches',
     description: 'Bell peppers, onions, carrots, zucchini, lettuce, tomatoes and Timnaz sauce.',
     descriptionStatus: 'verified',

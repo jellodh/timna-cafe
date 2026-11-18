@@ -1,16 +1,19 @@
 import type { MenuCategory } from '../types/menu'
 
 export const categories: MenuCategory[] = [
+  { id: 'breakfast', name: 'Breakfast', description: 'Breakfast Corner selections', group: 'Food' },
   { id: 'starters', name: 'Starters & Appetizers', description: 'Begin with something delicious', group: 'Food' },
   { id: 'soups', name: 'Soups', description: 'Warm and comforting selections', group: 'Food' },
   { id: 'salads', name: 'Salads', description: 'Fresh and vibrant choices', group: 'Food' },
   { id: 'meat', name: 'Meat Corner', description: 'Explore our meat selections', group: 'Food' },
   { id: 'chicken', name: 'Chicken Corner', description: 'Discover our chicken dishes', group: 'Food' },
   { id: 'fish', name: 'Fish & Seafood', description: 'From the waters to your table', group: 'Food' },
-  { id: 'local', name: 'Local Dishes', description: 'Familiar and satisfying flavours', group: 'Food' },
+  { id: 'local', name: 'Local Dishes', description: 'Familiar and satisfying flavours', group: 'Food',
+    note: 'Available accompaniments: Matooke, Rice, Pumpkin, Yam, Posho, Sweet Potato, Avocado, Greens and Bitter Berries.' },
   { id: 'rice', name: 'Rice Dishes', description: 'Our rice selections', group: 'Food' },
   { id: 'pasta', name: 'Pasta Love', description: 'Explore our pasta menu', group: 'Food' },
-  { id: 'sandwiches', name: 'Sandwiches', description: 'Explore our sandwich selections', group: 'Food' },
+  { id: 'sandwiches', name: 'Sandwiches', description: 'Explore our sandwich selections', group: 'Food',
+    note: 'All sandwiches are served with chips or a garden salad of your choice and Romesco sauce.' },
   { id: 'burgers', name: 'Burgers', description: 'Explore our burger selections', group: 'Food' },
   { id: 'wraps', name: 'Timnaz Wraps', description: 'Explore our wrap selections', group: 'Food' },
   { id: 'pizza', name: 'Pizza', description: 'Our pizza selections', group: 'Food' },

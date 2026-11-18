@@ -6,6 +6,16 @@ const verifiedPrice = (amount: number) => ({
 })
 
 export const menuItems: MenuItem[] = [
+  // BREAKFAST CORNER
+  { id: 'timna-breakfast', name: 'Timna Breakfast', categoryId: 'breakfast', sourceSection: 'Breakfast Corner', description: 'Sausages, choice of eggs, baked beans, bacon, wedges, toasted bread of choice, mushrooms, avocado, grilled tomato, coffee/tea and a glass of juice/wedges.', descriptionStatus: 'needs-review', price: verifiedPrice(30000), priceStatus: 'verified', nameStatus: 'verified' },
+  { id: 'english-breakfast', name: 'English Breakfast', categoryId: 'breakfast', sourceSection: 'Breakfast Corner', description: 'Home fries, sausage, toasted bread of choice, choice of eggs, baked beans, tea/coffee and a glass of juice.', descriptionStatus: 'verified', price: verifiedPrice(27000), priceStatus: 'verified', nameStatus: 'verified' },
+  { id: 'plantain-classic-breakfast', name: 'Plantain Classic Breakfast', categoryId: 'breakfast', sourceSection: 'Breakfast Corner', description: 'Fried plantain, creamy spinach, toasted bread and egg of your choice, tea/coffee, glass of juice.', descriptionStatus: 'verified', price: verifiedPrice(28000), priceStatus: 'verified', nameStatus: 'verified' },
+  { id: 'rolex', name: 'Rolex', categoryId: 'breakfast', sourceSection: 'Breakfast Corner', price: verifiedPrice(10000), priceStatus: 'verified', nameStatus: 'verified' },
+  { id: 'american-pan-cake', name: 'American Pan Cake', categoryId: 'breakfast', sourceSection: 'Breakfast Corner', description: 'American Pan cake, fruits, whipped cream, syrup and tea/coffee.', descriptionStatus: 'verified', price: verifiedPrice(18000), priceStatus: 'verified', nameStatus: 'verified' },
+  { id: 'waffles', name: 'Waffles', categoryId: 'breakfast', sourceSection: 'Breakfast Corner', description: 'Freshly made waffles served with fruits, whipped cream cheese and syrup.', descriptionStatus: 'needs-review', price: verifiedPrice(18000), priceStatus: 'verified', nameStatus: 'verified' },
+  { id: 'katogo-beef-chicken', name: 'Katogo Beef / Chicken', categoryId: 'breakfast', sourceSection: 'Breakfast Corner', price: verifiedPrice(20000), priceStatus: 'verified', nameStatus: 'verified' },
+  { id: 'toasted-bread', name: 'Toasted Bread', categoryId: 'breakfast', sourceSection: 'Breakfast Corner', price: verifiedPrice(5000), priceStatus: 'verified', nameStatus: 'verified' },
+
   // TEAS
   { id: 'english-tea', name: 'English Tea', categoryId: 'tea', sourceSection: 'Teas', price: verifiedPrice(10000), priceStatus: 'verified', nameStatus: 'verified' },
   { id: 'african-tea-spicy', name: 'African Tea Spicy', categoryId: 'tea', sourceSection: 'Teas', price: verifiedPrice(10000), priceStatus: 'verified', nameStatus: 'verified' },
@@ -699,8 +709,6 @@ export const menuItems: MenuItem[] = [
     name: 'Roasted Chicken Sandwich',
     categoryId: 'sandwiches',
     sourceSection: 'Sandwiches',
-    description: 'All sandwiches are served with chips or a garden salad of your choice and Romesco sauce.',
-    descriptionStatus: 'verified',
     price: verifiedPrice(33000),
     priceStatus: 'verified',
     nameStatus: 'verified',

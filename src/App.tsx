@@ -57,6 +57,15 @@ function App() {
     setSelectedCategory(categoryId)
   }
 
+  function openFeaturedCategory(
+    categoryId: string,
+    nextGroup: 'Food' | 'Drinks',
+  ) {
+    setGroup(nextGroup)
+    setSearch('')
+    setSelectedCategory(categoryId)
+  }
+
   return (
     <div className="site-shell">
       <header className="topbar">
@@ -80,24 +89,97 @@ function App() {
             <span>Beautiful moments.</span>
           </h1>
 
-          <p className="hero-copy">
-            Discover a menu made for good company, memorable meals
-            and moments worth sharing.
-          </p>
+          <div className="hero-bottom">
+            <p className="hero-copy">
+              Discover a menu made for good company, memorable meals
+              and moments worth sharing.
+            </p>
 
-          <button
-            className="explore-button"
-            onClick={() =>
-              document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })
-            }
-          >
-            EXPLORE THE MENU <span>↘</span>
-          </button>
+            <button
+              className="explore-button"
+              onClick={() =>
+                document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })
+              }
+            >
+              EXPLORE THE MENU <span>↘</span>
+            </button>
+          </div>
 
-          <div className="hero-index">
-            <span>01</span>
-            <span className="index-line" />
-            <span>DISCOVER</span>
+          <div className="hero-signature">SAVOUR. INDULGE. REPEAT.</div>
+        </section>
+
+        <section className="featured-section" aria-label="Timna highlights">
+          <div className="featured-heading">
+            <div>
+              <span className="eyebrow">A LITTLE SOMETHING FOR EVERY MOMENT</span>
+              <h2>Discover Timna</h2>
+            </div>
+            <span className="featured-swipe-hint">SWIPE TO EXPLORE&nbsp; →</span>
+          </div>
+
+          <div className="featured-track">
+            <button
+              className="featured-card featured-lusanniyya"
+              onClick={() => openFeaturedCategory('local', 'Food')}
+            >
+              <span className="featured-number">01 / LOCAL FAVOURITE</span>
+              <span className="featured-art featured-art-one" aria-hidden="true">L</span>
+              <span className="featured-card-title">Lusanniyya</span>
+              <span className="featured-card-copy">A Timna local-food highlight.</span>
+              <span className="featured-card-link">EXPLORE LOCAL DISHES ↗</span>
+            </button>
+
+            <button
+              className="featured-card featured-pizza"
+              onClick={() => openFeaturedCategory('pizza', 'Food')}
+            >
+              <span className="featured-number">02 / PIZZA DAYS</span>
+              <span className="featured-art featured-art-two" aria-hidden="true">P!</span>
+              <span className="featured-card-title">Buy One Pizza,<br />Get One Free.</span>
+              <span className="featured-card-copy">Every Monday & Friday.</span>
+              <span className="featured-card-link">EXPLORE PIZZA ↗</span>
+            </button>
+
+            <button
+              className="featured-card featured-juice"
+              onClick={() => openFeaturedCategory('juices', 'Drinks')}
+            >
+              <span className="featured-number">03 / FRESHLY MADE</span>
+              <span className="featured-art featured-art-three" aria-hidden="true">✳</span>
+              <span className="featured-card-title">Timnaz Fresh<br />Green Juice</span>
+              <span className="featured-card-copy">A refreshing choice from our drinks menu.</span>
+              <span className="featured-card-link">EXPLORE JUICES ↗</span>
+            </button>
+
+            <button
+              className="featured-card featured-mocktails"
+              onClick={() => openFeaturedCategory('mocktails', 'Drinks')}
+            >
+              <span className="featured-number">04 / THE DRINKS EDIT</span>
+              <span className="featured-art featured-art-four" aria-hidden="true">◒</span>
+              <span className="featured-card-title">A moment<br />for mocktails.</span>
+              <span className="featured-card-copy">Explore our mocktail selection.</span>
+              <span className="featured-card-link">EXPLORE MOCKTAILS ↗</span>
+            </button>
+
+            <button
+              className="featured-card featured-kitchen"
+              onClick={() => openFeaturedCategory('chicken', 'Food')}
+            >
+              <span className="featured-number">05 / FROM OUR KITCHEN</span>
+              <span className="featured-art featured-art-five" aria-hidden="true">T</span>
+              <span className="featured-card-title">Made for<br />good company.</span>
+              <span className="featured-card-copy">Take a look through our chicken selection.</span>
+              <span className="featured-card-link">EXPLORE THE MENU ↗</span>
+            </button>
+
+            <article className="featured-card featured-december">
+              <span className="featured-number">06 / COMING IN DECEMBER</span>
+              <span className="featured-art featured-art-six" aria-hidden="true">✧</span>
+              <span className="featured-card-title">Something<br />special is brewing.</span>
+              <span className="featured-card-copy">A little seasonal magic is on its way.</span>
+              <span className="featured-card-link">STAY TUNED</span>
+            </article>
           </div>
         </section>
 
